@@ -9,7 +9,8 @@ namespace SalesWebMvc.Data
 {
     public class SeedingService
     {
-        private SalesWebMvcContext _context;
+        //Declaração de Dependência
+        private readonly SalesWebMvcContext _context;
 
         public SeedingService(SalesWebMvcContext context)
         {
