@@ -22,5 +22,11 @@ namespace SalesWebMvc.Services
             //Operação síncrona (a aplicação pára enquanto o sistema faz a pesquisa)
             return _context.Seller.ToList();
         }
+
+        public void Insert(Seller obj)
+        {
+            _context.Add(obj);
+            _context.SaveChanges();
+        }
     }
 }
